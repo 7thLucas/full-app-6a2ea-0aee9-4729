@@ -1,48 +1,40 @@
 <style>
-.mode-landscape .sl-cover { flex-direction: row; }
-.mode-portrait .sl-cover { flex-direction: column; }
-.mode-landscape .sl-cover-left { width: 52%; }
-.mode-landscape .sl-cover-right { width: 48%; }
-.mode-portrait .sl-cover-left { width: 100%; flex: 1; }
-.mode-portrait .sl-cover-right { width: 100%; flex: 1; }
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 54%; }
+  .mode-portrait .sl-content { width: 100%; min-height: 55%; }
+  .mode-landscape .sl-visual { flex: 1; }
+  .mode-portrait .sl-visual { flex: 1; }
+  .mode-landscape .sl-headline { font-size: 3rem; line-height: 1.1; }
+  .mode-portrait .sl-headline { font-size: 2rem; line-height: 1.15; }
 </style>
-
-<section class="w-full h-full overflow-auto bg-white flex">
-  <div class="sl-cover flex w-full h-full">
-
-    <!-- Left: editorial content panel -->
-    <div class="sl-cover-left bg-indigo-950 flex flex-col justify-between p-12">
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex" style="min-height:100%">
+    <div class="sl-content flex flex-col justify-between p-10">
       <div>
-        <div class="flex items-center gap-2 mb-8">
-          <span class="block w-6 h-px bg-indigo-400"></span>
-          <span class="text-indigo-400 text-xs font-semibold tracking-widest uppercase">Location Discovery</span>
-        </div>
-        <h1 class="text-5xl font-black text-white leading-tight">
-          Pin It.<br/>Share It.<br/>Everywhere.
-        </h1>
-        <p class="text-indigo-200 text-base mt-6 leading-relaxed" style="max-width:320px">
-          An interactive 3D globe that turns any location into a universal link — flawless on WhatsApp, Instagram, X, and every platform.
-        </p>
-        <div class="flex flex-wrap gap-2 mt-8">
-          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">🌍 3D Globe</span>
-          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">📍 Location Pins</span>
-          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">🔗 Universal Links</span>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full" style="background:#0f172a;color:#22d3ee;">GlobePin</span>
+      </div>
+      <div class="flex-1 flex flex-col justify-center py-4">
+        <h1 class="sl-headline font-black mb-4" style="color:#0f172a;">Your World,<br>Shared<br>Perfectly.</h1>
+        <p class="text-sm leading-relaxed max-w-xs" style="color:#475569;">Pin exact locations on a photorealistic 3D globe. Share them anywhere — opens correctly on any platform, every time, zero friction.</p>
+        <div class="flex gap-2 mt-5 flex-wrap">
+          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#e0f2fe;color:#0369a1;">Tourists</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#e0f2fe;color:#0369a1;">Locals</span>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#dcfce7;color:#166534;">Cross-Platform</span>
         </div>
       </div>
       <div>
-        <div class="w-8 h-px bg-indigo-700 mb-4"></div>
         <data-attribution />
       </div>
     </div>
-
-    <!-- Right: globe visual -->
-    <div class="sl-cover-right relative overflow-hidden">
+    <div class="sl-visual relative overflow-hidden" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#164e63 100%);">
       <img
-        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=stunning%20photorealistic%203D%20Earth%20globe%20floating%20in%20deep%20dark%20space%2C%20glowing%20blue%20atmosphere%2C%20colorful%20location%20pin%20markers%20on%20multiple%20continents%2C%20cinematic%20rim%20lighting%2C%20premium%20dark%20background"
-        alt="Interactive 3D globe with location pins"
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=photorealistic%203D%20Earth%20globe%20floating%20in%20dark%20space%2C%20glowing%20cyan%20location%20pins%20marking%20cities%2C%20premium%20minimal%20style%2C%20deep%20navy%20atmosphere%2C%20dramatic%20lighting"
+        alt="3D Globe with location pins"
         class="w-full h-full object-cover"
+        style="opacity:0.82;"
       />
+      <div class="absolute inset-0" style="background:linear-gradient(to right,rgba(15,23,42,0.2) 0%,transparent 38%);"></div>
     </div>
-
   </div>
 </section>
