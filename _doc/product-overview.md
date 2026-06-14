@@ -1,4 +1,4 @@
-# GlobePin — Product Overview *(working title; final name pending)*
+# Location Tracker — Product Overview
 
 ## What It Is
 An interactive 3D globe and location-sharing app. Users explore the world on a spinning, zoomable globe, drop pins on notable places, and share those locations as clean universal links that work without error on any platform — WhatsApp, Instagram, X, SMS, email, iMessage, and beyond. No broken redirects, no app install required on the recipient's side — just a tap and the location opens in full 3D.
