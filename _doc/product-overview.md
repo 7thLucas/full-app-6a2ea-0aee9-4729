@@ -7,7 +7,7 @@ An interactive 3D globe and location-sharing app. Users explore the world on a s
 Sharing a location today is fragmented and unreliable. Screenshots lose quality and context. Platform-native map links routinely break — wrong format, wrong app, device incompatibilities, or the recipient must have the same app installed. Static flat map images fail to convey the spatial scale and magic of a great location. The experience is clunky and underwhelming for something as simple as "you need to visit this place."
 
 ## The Solution
-GlobePin gives every pinned location a reliable, universally renderable link paired with a 3D globe visualization. One tap to pin, one tap to share — and the link opens correctly everywhere, with no app required on the recipient's side.
+Location Tracker gives every pinned location a reliable, universally renderable link paired with a 3D globe visualization. One tap to pin, one tap to share — and the link opens correctly everywhere, with no app required on the recipient's side.
 
 ## Positioning
 A premium, visually-first location discovery and sharing tool. The app feels like having a personal globe — intimate in its curation, epic in visual impact. Confident and adventurous in voice: *"Your world, shared perfectly."*
