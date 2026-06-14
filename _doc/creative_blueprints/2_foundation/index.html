@@ -1,81 +1,68 @@
 <style>
-.mode-landscape .sl-main { flex-direction: row; gap: 1.25rem; }
-.mode-portrait .sl-main { flex-direction: column; gap: 1rem; }
-.mode-landscape .sl-visual { display: block; width: 210px; flex-shrink: 0; }
-.mode-portrait .sl-visual { display: none; }
+  .mode-landscape .sl-split { flex-direction: row; gap: 1.5rem; }
+  .mode-portrait .sl-split { flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-col { flex: 1; }
+  .mode-portrait .sl-col { flex: 1; }
 </style>
-
-<section class="w-full h-full overflow-auto bg-white flex flex-col p-10">
-
-  <!-- Header -->
-  <div class="mb-5 flex-shrink-0">
-    <span class="text-xs font-semibold tracking-widest text-indigo-500 uppercase">Why GlobePin Exists</span>
-    <h2 class="text-3xl font-black text-slate-900 mt-1">The Problem &amp; The Answer</h2>
-  </div>
-
-  <!-- Main: Problem | Solution | Visual -->
-  <div class="sl-main flex flex-1 min-h-0">
-
-    <!-- Problem -->
-    <div class="flex-1 bg-rose-50 border border-rose-100 rounded-2xl p-7 flex flex-col">
-      <div class="flex items-center gap-3 mb-5">
-        <div class="w-9 h-9 rounded-xl bg-rose-100 flex items-center justify-center text-rose-500 text-base flex-shrink-0">⚡</div>
-        <h3 class="text-base font-bold text-slate-900">Location Sharing Is Broken</h3>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+    <div class="mb-5">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-2" style="background:#e0f2fe;color:#0369a1;">Foundation</span>
+      <h2 class="text-2xl font-black" style="color:#0f172a;">Why GlobePin exists</h2>
+    </div>
+    <div class="sl-split flex flex-1">
+      <!-- Problem -->
+      <div class="sl-col rounded-2xl p-6 flex flex-col" style="background:linear-gradient(135deg,#1e1b4b 0%,#312e81 100%);">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">⚠️</span>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#a5b4fc;">The Problem</span>
+        </div>
+        <h3 class="font-bold text-base mb-3 leading-snug" style="color:#ffffff;">Location sharing is broken</h3>
+        <ul class="space-y-2 flex-1">
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#22d3ee;">✕</span>
+            <span class="text-xs leading-relaxed" style="color:#c7d2fe;">Map links routinely break — wrong format, wrong app, device incompatibilities</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#22d3ee;">✕</span>
+            <span class="text-xs leading-relaxed" style="color:#c7d2fe;">Screenshots lose quality and provide zero spatial context</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#22d3ee;">✕</span>
+            <span class="text-xs leading-relaxed" style="color:#c7d2fe;">Recipient must have the same app installed — or the link simply fails</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#22d3ee;">✕</span>
+            <span class="text-xs leading-relaxed" style="color:#c7d2fe;">Flat static maps can't convey the scale and magic of a great place</span>
+          </li>
+        </ul>
       </div>
-      <ul class="space-y-3 flex-1">
-        <li class="flex gap-2.5">
-          <span class="text-rose-400 font-bold text-sm mt-0.5 flex-shrink-0">—</span>
-          <span class="text-slate-600 text-sm leading-relaxed">Map links fail across platforms — wrong format, wrong app, device mismatches</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-rose-400 font-bold text-sm mt-0.5 flex-shrink-0">—</span>
-          <span class="text-slate-600 text-sm leading-relaxed">Screenshots lose quality and context before reaching the recipient</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-rose-400 font-bold text-sm mt-0.5 flex-shrink-0">—</span>
-          <span class="text-slate-600 text-sm leading-relaxed">Flat map images feel static — no sense of place, scale, or spatial beauty</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-rose-400 font-bold text-sm mt-0.5 flex-shrink-0">—</span>
-          <span class="text-slate-600 text-sm leading-relaxed">Recipients often need the same app installed just to open a shared link</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Solution -->
-    <div class="flex-1 bg-indigo-950 rounded-2xl p-7 flex flex-col">
-      <div class="flex items-center gap-3 mb-5">
-        <div class="w-9 h-9 rounded-xl bg-indigo-800 flex items-center justify-center text-cyan-400 text-base flex-shrink-0">🌍</div>
-        <h3 class="text-base font-bold text-white">Pin Once, Share Everywhere</h3>
+      <!-- Solution -->
+      <div class="sl-col rounded-2xl p-6 flex flex-col" style="background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);border:2px solid #bae6fd;">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🌍</span>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#0369a1;">The Solution</span>
+        </div>
+        <h3 class="font-bold text-base mb-3 leading-snug" style="color:#0f172a;">One exact pin. One link. Works everywhere.</h3>
+        <ul class="space-y-2 flex-1">
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#0891b2;">✓</span>
+            <span class="text-xs leading-relaxed" style="color:#334155;">Drop a pin on exact GPS coordinates on a photorealistic 3D globe</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#0891b2;">✓</span>
+            <span class="text-xs leading-relaxed" style="color:#334155;">Every pin generates a universal link — no app required on the recipient's side</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#0891b2;">✓</span>
+            <span class="text-xs leading-relaxed" style="color:#334155;">One-tap share to WhatsApp, Instagram, X, SMS, email, iMessage and more</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5 flex-shrink-0 text-xs font-bold" style="color:#0891b2;">✓</span>
+            <span class="text-xs leading-relaxed" style="color:#334155;">Tourists discover; locals curate — both share, both receive, zero friction</span>
+          </li>
+        </ul>
       </div>
-      <ul class="space-y-3 flex-1">
-        <li class="flex gap-2.5">
-          <span class="text-cyan-400 font-bold text-sm mt-0.5 flex-shrink-0">✓</span>
-          <span class="text-indigo-200 text-sm leading-relaxed">Interactive 3D globe for spatial, immersive location discovery</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-cyan-400 font-bold text-sm mt-0.5 flex-shrink-0">✓</span>
-          <span class="text-indigo-200 text-sm leading-relaxed">Universal share links that open and render correctly on every platform</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-cyan-400 font-bold text-sm mt-0.5 flex-shrink-0">✓</span>
-          <span class="text-indigo-200 text-sm leading-relaxed">No app required on the recipient's side — tap the link, explore the place</span>
-        </li>
-        <li class="flex gap-2.5">
-          <span class="text-cyan-400 font-bold text-sm mt-0.5 flex-shrink-0">✓</span>
-          <span class="text-indigo-200 text-sm leading-relaxed">One-tap to WhatsApp, Instagram, X, SMS, email, iMessage, and beyond</span>
-        </li>
-      </ul>
     </div>
-
-    <!-- Supporting visual -->
-    <div class="sl-visual rounded-2xl overflow-hidden">
-      <img
-        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=person%20holding%20smartphone%20with%20a%20glowing%203D%20globe%20on%20screen%2C%20tapping%20a%20share%20button%2C%20warm%20ambient%20lighting%2C%20clean%20minimal%20background%2C%20cinematic"
-        alt="Sharing a location from a 3D globe app"
-        class="w-full h-full object-cover"
-      />
-    </div>
-
   </div>
 </section>

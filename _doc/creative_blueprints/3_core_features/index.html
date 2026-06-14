@@ -1,61 +1,40 @@
 <style>
-.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
-.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: 1fr; }
 </style>
-
-<section class="w-full h-full overflow-auto bg-white flex flex-col p-10">
-
-  <!-- Header -->
-  <div class="mb-4 flex-shrink-0">
-    <span class="text-xs font-semibold tracking-widest text-indigo-500 uppercase">What It Does</span>
-    <h2 class="text-3xl font-black text-slate-900 mt-1">Core Features</h2>
-  </div>
-
-  <!-- Persona chips -->
-  <div class="flex gap-2 mb-5 flex-shrink-0">
-    <span class="flex items-center gap-1.5 bg-indigo-950 text-white text-xs font-semibold px-4 py-2 rounded-full">🗺️ Explorer</span>
-    <span class="flex items-center gap-1.5 bg-slate-100 text-slate-500 text-xs font-medium px-4 py-2 rounded-full">📸 Social Sharer</span>
-    <span class="flex items-center gap-1.5 bg-slate-100 text-slate-500 text-xs font-medium px-4 py-2 rounded-full">🏙️ Local Guide</span>
-  </div>
-
-  <!-- Feature cards: 2 rows × 3 cols -->
-  <div class="sl-grid grid gap-3 flex-1 min-h-0">
-
-    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">🌍</div>
-      <h4 class="font-bold text-slate-900 text-sm">3D Interactive Globe</h4>
-      <p class="text-slate-500 text-xs leading-relaxed">Spin, zoom, and navigate a photorealistic globe to explore any location in the world.</p>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+    <div class="mb-4">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-2" style="background:#e0f2fe;color:#0369a1;">Core Features</span>
+      <h2 class="text-2xl font-black" style="color:#0f172a;">Built for explorers, loved by locals</h2>
     </div>
-
-    <div class="bg-indigo-950 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">📍</div>
-      <h4 class="font-bold text-white text-sm">Location Pinning</h4>
-      <p class="text-indigo-300 text-xs leading-relaxed">Drop a pin on any spot, add a title and personal note — everything the place deserves.</p>
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-4">
+      <span class="px-4 py-1.5 rounded-full text-xs font-bold text-white" style="background:#1e3a8a;">🧭 Tourists</span>
+      <span class="px-4 py-1.5 rounded-full text-xs font-semibold" style="background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;">🏘️ Locals</span>
     </div>
-
-    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">🔗</div>
-      <h4 class="font-bold text-slate-900 text-sm">Universal Share Links</h4>
-      <p class="text-slate-500 text-xs leading-relaxed">Every pin becomes a clean link that opens and renders correctly on any platform or device.</p>
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+      <div class="rounded-xl p-5 flex flex-col gap-2" style="background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);">
+        <span class="text-xl">🌍</span>
+        <h3 class="font-bold text-sm" style="color:#1e3a8a;">Interactive 3D Globe</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">A rotatable, zoomable photorealistic globe — explore anywhere in the world and feel the spatial scale of any destination.</p>
+      </div>
+      <div class="rounded-xl p-5 flex flex-col gap-2" style="background:linear-gradient(135deg,#f0fdf4 0%,#dcfce7 100%);">
+        <span class="text-xl">📍</span>
+        <h3 class="font-bold text-sm" style="color:#14532d;">Exact Location Pinning</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Drop a pin on precise GPS coordinates. Add a title and description so the recipient knows exactly what they're receiving.</p>
+      </div>
+      <div class="rounded-xl p-5 flex flex-col gap-2" style="background:linear-gradient(135deg,#faf5ff 0%,#ede9fe 100%);">
+        <span class="text-xl">🔗</span>
+        <h3 class="font-bold text-sm" style="color:#4c1d95;">Universal Share Links</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Every pin generates a clean universal link. Opens in full 3D for the recipient — no app install, no broken redirect, ever.</p>
+      </div>
+      <div class="rounded-xl p-5 flex flex-col gap-2" style="background:linear-gradient(135deg,#fff7ed 0%,#fed7aa 100%);">
+        <span class="text-xl">📤</span>
+        <h3 class="font-bold text-sm" style="color:#7c2d12;">One-Tap Cross-Platform Sharing</h3>
+        <p class="text-xs leading-relaxed" style="color:#475569;">Share to WhatsApp, Instagram, X, SMS, email, iMessage — via the device native share sheet. Works instantly on any platform.</p>
+      </div>
     </div>
-
-    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">📤</div>
-      <h4 class="font-bold text-slate-900 text-sm">One-Tap Sharing</h4>
-      <p class="text-slate-500 text-xs leading-relaxed">Share to WhatsApp, Instagram, X, SMS, or email in a single tap via your device's share sheet.</p>
-    </div>
-
-    <div class="bg-cyan-950 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">👁️</div>
-      <h4 class="font-bold text-white text-sm">No-App Viewing</h4>
-      <p class="text-cyan-200 text-xs leading-relaxed">Recipients explore the pinned location in full 3D without needing to install anything.</p>
-    </div>
-
-    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
-      <div class="text-2xl">📝</div>
-      <h4 class="font-bold text-slate-900 text-sm">Rich Pin Context</h4>
-      <p class="text-slate-500 text-xs leading-relaxed">Add descriptions so the story and meaning of a place travel with every shared link.</p>
-    </div>
-
   </div>
 </section>
