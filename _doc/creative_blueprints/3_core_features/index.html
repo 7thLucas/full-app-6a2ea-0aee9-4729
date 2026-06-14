@@ -1,0 +1,61 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white flex flex-col p-10">
+
+  <!-- Header -->
+  <div class="mb-4 flex-shrink-0">
+    <span class="text-xs font-semibold tracking-widest text-indigo-500 uppercase">What It Does</span>
+    <h2 class="text-3xl font-black text-slate-900 mt-1">Core Features</h2>
+  </div>
+
+  <!-- Persona chips -->
+  <div class="flex gap-2 mb-5 flex-shrink-0">
+    <span class="flex items-center gap-1.5 bg-indigo-950 text-white text-xs font-semibold px-4 py-2 rounded-full">🗺️ Explorer</span>
+    <span class="flex items-center gap-1.5 bg-slate-100 text-slate-500 text-xs font-medium px-4 py-2 rounded-full">📸 Social Sharer</span>
+    <span class="flex items-center gap-1.5 bg-slate-100 text-slate-500 text-xs font-medium px-4 py-2 rounded-full">🏙️ Local Guide</span>
+  </div>
+
+  <!-- Feature cards: 2 rows × 3 cols -->
+  <div class="sl-grid grid gap-3 flex-1 min-h-0">
+
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">🌍</div>
+      <h4 class="font-bold text-slate-900 text-sm">3D Interactive Globe</h4>
+      <p class="text-slate-500 text-xs leading-relaxed">Spin, zoom, and navigate a photorealistic globe to explore any location in the world.</p>
+    </div>
+
+    <div class="bg-indigo-950 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">📍</div>
+      <h4 class="font-bold text-white text-sm">Location Pinning</h4>
+      <p class="text-indigo-300 text-xs leading-relaxed">Drop a pin on any spot, add a title and personal note — everything the place deserves.</p>
+    </div>
+
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">🔗</div>
+      <h4 class="font-bold text-slate-900 text-sm">Universal Share Links</h4>
+      <p class="text-slate-500 text-xs leading-relaxed">Every pin becomes a clean link that opens and renders correctly on any platform or device.</p>
+    </div>
+
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">📤</div>
+      <h4 class="font-bold text-slate-900 text-sm">One-Tap Sharing</h4>
+      <p class="text-slate-500 text-xs leading-relaxed">Share to WhatsApp, Instagram, X, SMS, or email in a single tap via your device's share sheet.</p>
+    </div>
+
+    <div class="bg-cyan-950 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">👁️</div>
+      <h4 class="font-bold text-white text-sm">No-App Viewing</h4>
+      <p class="text-cyan-200 text-xs leading-relaxed">Recipients explore the pinned location in full 3D without needing to install anything.</p>
+    </div>
+
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 flex flex-col gap-2">
+      <div class="text-2xl">📝</div>
+      <h4 class="font-bold text-slate-900 text-sm">Rich Pin Context</h4>
+      <p class="text-slate-500 text-xs leading-relaxed">Add descriptions so the story and meaning of a place travel with every shared link.</p>
+    </div>
+
+  </div>
+</section>
