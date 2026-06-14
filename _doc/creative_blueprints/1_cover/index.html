@@ -1,0 +1,48 @@
+<style>
+.mode-landscape .sl-cover { flex-direction: row; }
+.mode-portrait .sl-cover { flex-direction: column; }
+.mode-landscape .sl-cover-left { width: 52%; }
+.mode-landscape .sl-cover-right { width: 48%; }
+.mode-portrait .sl-cover-left { width: 100%; flex: 1; }
+.mode-portrait .sl-cover-right { width: 100%; flex: 1; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white flex">
+  <div class="sl-cover flex w-full h-full">
+
+    <!-- Left: editorial content panel -->
+    <div class="sl-cover-left bg-indigo-950 flex flex-col justify-between p-12">
+      <div>
+        <div class="flex items-center gap-2 mb-8">
+          <span class="block w-6 h-px bg-indigo-400"></span>
+          <span class="text-indigo-400 text-xs font-semibold tracking-widest uppercase">Location Discovery</span>
+        </div>
+        <h1 class="text-5xl font-black text-white leading-tight">
+          Pin It.<br/>Share It.<br/>Everywhere.
+        </h1>
+        <p class="text-indigo-200 text-base mt-6 leading-relaxed" style="max-width:320px">
+          An interactive 3D globe that turns any location into a universal link — flawless on WhatsApp, Instagram, X, and every platform.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-8">
+          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">🌍 3D Globe</span>
+          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">📍 Location Pins</span>
+          <span class="bg-indigo-800 text-indigo-200 text-xs font-medium px-3 py-1.5 rounded-full">🔗 Universal Links</span>
+        </div>
+      </div>
+      <div>
+        <div class="w-8 h-px bg-indigo-700 mb-4"></div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: globe visual -->
+    <div class="sl-cover-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=stunning%20photorealistic%203D%20Earth%20globe%20floating%20in%20deep%20dark%20space%2C%20glowing%20blue%20atmosphere%2C%20colorful%20location%20pin%20markers%20on%20multiple%20continents%2C%20cinematic%20rim%20lighting%2C%20premium%20dark%20background"
+        alt="Interactive 3D globe with location pins"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
