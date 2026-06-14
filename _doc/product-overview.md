@@ -1,0 +1,1 @@
+I want am app  for good location im 3D and globe   and can even share the location  on any platform without wny error of difficulties
