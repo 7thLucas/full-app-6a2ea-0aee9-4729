@@ -28,7 +28,6 @@ Spatial, premium, exploration-forward. Color palette anchors in deep indigo/navy
 ## Scope Boundaries (MVP)
 - Visualization and sharing only — no turn-by-turn navigation
 - Open sharing model (no private/restricted lists at MVP)
-- App name to be confirmed by owner
 
 ## Strategic Principles
 - **Zero-friction sharing is the core promise** — every feature must uphold it; a broken link is a product failure
