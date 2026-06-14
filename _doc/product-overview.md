@@ -12,10 +12,9 @@ GlobePin gives every pinned location a reliable, universally renderable link pai
 ## Positioning
 A premium, visually-first location discovery and sharing tool. The app feels like having a personal globe — intimate in its curation, epic in visual impact. Confident and adventurous in voice: *"Your world, shared perfectly."*
 
-## Target Users *(to be confirmed during onboarding)*
-- Travelers and explorers who regularly discover and recommend destinations
-- Social-media-active users sharing restaurants, hidden gems, and scenic spots with friends
-- Local guides curating and recommending places in their city
+## Target Users
+- **Tourists** — travellers exploring new destinations who need to save, remember, and share places they discover
+- **Locals** — residents who know their city's hidden gems and want to share exact spots with visitors or friends
 
 ## Core Capabilities (MVP)
 1. **Interactive 3D Globe** — A rotatable, zoomable photorealistic globe for browsing and pinning any location in the world
